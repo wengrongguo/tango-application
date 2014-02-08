@@ -1,0 +1,2 @@
+[code] [status] [seed] [redirect]
+200 CRAWLED http://bbs.tianya.cn/list.jsp?item=5180

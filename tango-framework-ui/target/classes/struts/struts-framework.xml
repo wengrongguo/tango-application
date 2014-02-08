@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright (c) 2012. tAngo
+  ~ 	Email : org.java.tango@gmail.com
+-->
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <package name="admin-default" extends="json-default">
+        <interceptors>
+            <interceptor name="applicationInterceptor" class="org.tango.framework.web.ApplicationInterceptor">
+                <param name="debug">true</param>
+                <param name="login">login.action</param>
+                <param name="capacity">100</param>
+                <param name="interceptLogin">true</param>
+                <param name="interceptPrivilege">true</param>
+            </interceptor>
+            <interceptor-stack name="applicationInterceptorStack">
+                <interceptor-ref name="exception"/>
+                <interceptor-ref name="alias"/>
+                <interceptor-ref name="servletConfig"/>
+                <interceptor-ref name="i18n"/>
+                <interceptor-ref name="prepare"/>
+                <interceptor-ref name="chain"/>
+                <interceptor-ref name="scopedModelDriven"/>
+                <interceptor-ref name="modelDriven"/>
+                <interceptor-ref name="fileUpload"/>
+                <interceptor-ref name="checkbox"/>
+                <interceptor-ref name="multiselect"/>
+                <interceptor-ref name="staticParams"/>
+                <interceptor-ref name="actionMappingParams"/>
+                <interceptor-ref name="params">
+                    <param name="excludeParams">dojo\..*,^struts\..*</param>
+                </interceptor-ref>
+                <interceptor-ref name="applicationInterceptor"/>
+                <interceptor-ref name="conversionError"/>
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+                <interceptor-ref name="debugging"/>
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="applicationInterceptorStack"/>
+        <global-results>
+            <result name="login">/WEB-INF/common/tologin.jsp</result>
+            <result name="errorPage">/WEB-INF/common/error/error.jsp</result>
+            <result name="errorJson" type="json">
+                <param name="root">actionResult</param>
+            </result>
+            <result name="privilege">/WEB-INF/common/error/error.jsp</result>
+        </global-results>
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="errorPage"></exception-mapping>
+        </global-exception-mappings>
+    </package>
+</struts>

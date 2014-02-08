@@ -1,0 +1,111 @@
+Frontier report - 201312211532
+ Job being crawled: bj.tianya
+
+ -----===== STATS =====-----
+ Discovered:    12
+ Queued:        0
+ Finished:      12
+  Successfully: 12
+  Failed:       0
+  Disregarded:  0
+
+ -----===== QUEUES =====-----
+ Already included size:     12
+               pending:     0
+
+ All class queues map size: 3
+             Active queues: 1
+                    In-process: 0
+                         Ready: 0
+                       Snoozed: 1
+           Inactive queues: 0 (p3: 0)
+            Retired queues: 0
+          Exhausted queues: 2
+
+             Last state: EMPTY
+ -----===== MANAGER THREAD =====-----
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1479)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.frontier.WorkQueueFrontier.standardReportTo(WorkQueueFrontier.java:1398)
+    org.archive.crawler.frontier.WorkQueueFrontier.reportTo(WorkQueueFrontier.java:1228)
+    org.archive.crawler.reporting.FrontierSummaryReport.write(FrontierSummaryReport.java:41)
+    org.archive.crawler.reporting.StatisticsTracker.writeReportFile(StatisticsTracker.java:909)
+    org.archive.crawler.reporting.StatisticsTracker.dumpReports(StatisticsTracker.java:937)
+    org.archive.crawler.reporting.StatisticsTracker.crawlEnded(StatisticsTracker.java:565)
+    org.archive.crawler.reporting.StatisticsTracker.onApplicationEvent(StatisticsTracker.java:985)
+    org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:97)
+    org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:324)
+    org.archive.crawler.framework.CrawlController.sendCrawlStateChangeEvent(CrawlController.java:326)
+    org.archive.crawler.framework.CrawlController.completeStop(CrawlController.java:391)
+    org.archive.crawler.framework.CrawlController.noteFrontierState(CrawlController.java:656)
+    org.archive.crawler.frontier.AbstractFrontier.reachedState(AbstractFrontier.java:439)
+    org.archive.crawler.frontier.AbstractFrontier.managementTasks(AbstractFrontier.java:397)
+    org.archive.crawler.frontier.AbstractFrontier$1.run(AbstractFrontier.java:315)
+
+ -----===== 3 LONGEST QUEUES =====-----
+LONGEST#0:
+Queue cn,laibafile,img3, (p3)
+  0 items
+   wakes in: 2s551ms
+    last enqueued: http://img3.laibafile.cn/p/l/164631578.jpg
+      last peeked: http://img3.laibafile.cn/p/l/164730105.jpg
+   total expended: 6 (total budget: -1)
+   active balance: 2994
+   last(avg) cost: 1(1)
+   totalScheduled fetchSuccesses fetchFailures fetchDisregards fetchResponses robotsDenials successBytes totalBytes fetchNonResponses lastSuccessTime
+   6 6 0 0 6 0 23939 23939 2 2013-12-21T15:32:04.027Z
+   SimplePrecedenceProvider
+   3
+
+LONGEST#1:
+Queue cn,tianya,bbs, (p3)
+  0 items
+    last enqueued: http://bbs.tianya.cn/list.jsp?item=5180
+      last peeked: http://bbs.tianya.cn/list.jsp?item=5180
+   total expended: 3 (total budget: -1)
+   active balance: 2997
+   last(avg) cost: 1(1)
+   totalScheduled fetchSuccesses fetchFailures fetchDisregards fetchResponses robotsDenials successBytes totalBytes fetchNonResponses lastSuccessTime
+   3 3 0 0 3 0 71139 71139 2 2013-12-21T15:31:08.147Z
+   SimplePrecedenceProvider
+   3
+
+LONGEST#2:
+Queue com,tianyaui,static, (p3)
+  0 items
+    last enqueued: http://static.tianyaui.com/global/bbs/web/static/images/loading1.gif
+      last peeked: http://static.tianyaui.com/global/bbs/web/static/images/loading1.gif
+   total expended: 3 (total budget: -1)
+   active balance: 2997
+   last(avg) cost: 1(1)
+   totalScheduled fetchSuccesses fetchFailures fetchDisregards fetchResponses robotsDenials successBytes totalBytes fetchNonResponses lastSuccessTime
+   3 3 0 0 3 0 4328 4328 2 2013-12-21T15:31:17.699Z
+   SimplePrecedenceProvider
+   3
+
+
+ -----===== IN-PROCESS QUEUES =====-----
+
+ -----===== READY QUEUES =====-----
+
+ -----===== SNOOZED QUEUES =====-----
+SNOOZED#0:
+Queue cn,laibafile,img3, (p3)
+  0 items
+   wakes in: 2s538ms
+    last enqueued: http://img3.laibafile.cn/p/l/164631578.jpg
+      last peeked: http://img3.laibafile.cn/p/l/164730105.jpg
+   total expended: 6 (total budget: -1)
+   active balance: 2994
+   last(avg) cost: 1(1)
+   totalScheduled fetchSuccesses fetchFailures fetchDisregards fetchResponses robotsDenials successBytes totalBytes fetchNonResponses lastSuccessTime
+   6 6 0 0 6 0 23939 23939 2 2013-12-21T15:32:04.027Z
+   SimplePrecedenceProvider
+   3
+
+
+ -----===== INACTIVE QUEUES =====-----
+
+ -----===== RETIRED QUEUES =====-----

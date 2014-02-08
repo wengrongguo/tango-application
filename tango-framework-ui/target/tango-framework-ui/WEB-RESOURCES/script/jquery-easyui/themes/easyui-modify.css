@@ -1,0 +1,25 @@
+.datagrid .panel-header {
+    background: none;
+    background-color: #f8f9fa;
+    background: -webkit-linear-gradient(top, #f8f9fa 0, #f8f9fa 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8f9fa, endColorstr=#f8f9fa, GradientType=0);
+}
+
+/*标头以及行设置*/
+.datagrid-header-row, .datagrid-row {
+    height: 26px;
+}
+
+/*修改边框颜色*/
+.datagrid .panel-header, .panel-body {
+    border-color: rgb(213, 213, 213);
+    border-style: solid;
+    height: 25px;
+    line-height: 15px;
+}
+
+.datagrid .panel-title {
+    height: 38px;
+    line-height: 27px;
+}

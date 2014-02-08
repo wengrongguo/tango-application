@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+/* 登录页*/
+*{margin:0; padding:0;}
+body{background:#ffffff; font-size:12px}
+  .logo
+{
+    float: left;
+    width: 45px;
+    background: url(img/logo.png) no-repeat;
+    height: 32px;
+}
+
+
+.s_name
+{
+    float: left;
+    height: 29px;
+    line-height: 29px;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 3px;
+    filter: Dropshadow(offx=1,offy=0,color=white) Dropshadow(offx=0,offy=1,color=white);
+}
+
+.login
+{
+    float: right;
+    line-height: 32px;
+    width: 200px;
+    padding-right: 10px;
+}
+.login a{ font-size:12px; color:#333; text-decoration:none}
+.login a:hover{ font-size:12px; color:#0033ff; text-decoration:none}
+
+.dl{width:525px; height:341px;background-image:url(img/dl.png)!important;background-image:url(#);FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/dl.png'); margin:auto; margin-top:70px;position:absolute;}
+.yhm{width:278px; height:42px; border:none; background:url(img/yhm.png) no-repeat; margin-bottom:10px; padding-left:58px; line-height:42px;}
+.mm{width:278px; height:42px; border:none; background:url(img/mm.png) no-repeat;margin-bottom:10px; padding-left:58px;line-height:42px;}
+.anniu{width:90px; height:38px; border:none; background:url(img/botton.png) no-repeat; font-size:14px; float:right; line-height:38px; text-align:center; text-decoration:none; color:#000;}

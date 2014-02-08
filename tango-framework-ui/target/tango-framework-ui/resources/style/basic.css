@@ -1,0 +1,19 @@
+﻿@charset "utf-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+form tr td {
+    height: 25px;
+}
+
+form tr td label {
+    font-size: 12px;
+}
+
+input[type = 'text'], textarea {
+    width: 150px;
+}
+
+

@@ -1,0 +1,21 @@
+crawl name: bj.tianya
+crawl status: Finished
+duration: 1m31s488ms
+
+seeds crawled: 1
+seeds uncrawled: 0
+
+hosts visited: 3
+
+URIs processed: 12
+URI successes: 12
+URI failures: 0
+URI disregards: 0
+
+novel URIs: 12
+
+total crawled bytes: 99406 (97 KiB) 
+novel crawled bytes: 99406 (97 KiB)
+
+URIs/sec: 0.13
+KB/sec: 1

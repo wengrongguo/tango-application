@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: tango
+Build-Jdk: 1.6.0_30
+Specification-Title: tango-framework
+Specification-Version: 1.0.0-SNAPSHOT
+Specification-Vendor: tAngo/org.java.tango@gmail.com
+Implementation-Title: tango-framework
+Implementation-Version: 1.0.0-SNAPSHOT
+Implementation-Vendor-Id: org.tango
+Implementation-Vendor: tAngo/org.java.tango@gmail.com
+

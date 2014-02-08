@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>您所请求的页面不存在或已被删除！</title>
+<meta name="keywords" content="Error">
+<meta name="description" content="无法访问本页面的原因是：您所请求的页面不存在或已被删除！">
+<meta http-equiv="Refresh" content="5; url=http://bbs.hefei.cc" /> 
+<link rel="stylesheet" href="http://www.hefei.cc/css/css_error.css" type="text/css" />
+</head>
+<body>
+<div class="main">
+<div style="padding-top:20px;"><img src="http://www.hefei.cc/images/error_03.gif"></div>
+<div><img src="http://www.hefei.cc/images/error_06.gif"></div>
+<div><img src="http://www.hefei.cc/images/error_08.gif"></div>
+<div><img src="http://www.hefei.cc/images/error_09.gif"></div>
+<div><img src="http://www.hefei.cc/images/error_10.gif"></div>
+<div><img src="http://www.hefei.cc/images/error_11.gif"></div>
+<div><img src="http://www.hefei.cc/images/error_12.gif"></div>
+
+<div style="text-align:center; line-height:26px;"><span class="tiao">自动跳转至主页,<a href="http://bbs.hefei.cc/" target="_self">如果您的浏览器不支持跳转请点击这里</a></span><br/>
+<span class="nian"><a href="http://www.hefei.cc/" target="_self">合肥热线</a> | <a href="http://bbs.hefei.cc/" target="_self">合肥论坛</a> | <a href="http://bao.hefei.cc/" target="_self">生活宝</a> | <a href="http://www.hefei.cc/3g/" target="_self">手机合论</a></span></div>
+
+</div>
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0" class="copyright" style="border-top:3px solid #E7E7E7; margin-top:30px;">
+  <tr>
+    <td height="80" align="center" style="font-size:12px; line-height:24px; padding-top:0px"><a href="http://www.hefei.cc/about.htm" target="_blank">关于本站</a> | <a href="http://www.hefei.cc/ad.htm" target="_blank">广告发布</a> | <a href="http://www.hefei.cc/brand.php" target="_blank">媒体合作</a> | <a href="http://www.hefei.cc/contact.htm" target="_blank">联系方法</a> | <a href="http://www.hefei.cc/sitemap.htm" target="_blank">网站导航</a> | <a href="http://www.hefei.cc/link.php" target="_blank">友情链接</a> | <a href="http://www.hefei.cc/job.htm" target="_blank">招聘信息</a> | <a href="http://www.hefei.cc/Statement.htm" target="_blank">免责声明</a> | <a href="javascript:window.external.AddFavorite('http://www.hefei.cc','合肥热线');">加入收藏</a> | <a onclick="this.style.behavior='url(#default#homepage)';this.setHomepage('http://www.hefei.cc/')" href="javascript:;">设为首页</a><br />
+    Copyright @ 2003-2011 hefei.cc All Rights Reserved 合肥热线 合肥论坛 版权所有 <a title="站长统计" href="http://www.cnzz.com/stat/website.php?web_id=2364400" target="_blank"></a></td>
+  </tr>
+</table>
+
+</body>
+</html>

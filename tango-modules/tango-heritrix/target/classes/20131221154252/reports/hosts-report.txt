@@ -1,0 +1,5 @@
+[#urls] [#bytes] [host] [#robots] [#remaining] [#novel-urls] [#novel-bytes] [#dup-by-hash-urls] [#dup-by-hash-bytes] [#not-modified-urls] [#not-modified-bytes]
+5 23842 img3.laibafile.cn 0 0 5 23842 0 0 0 0 
+3 212 dns: 0 0 3 212 0 0 0 0 
+2 71082 bbs.tianya.cn 0 0 2 71082 0 0 0 0 
+2 4269 static.tianyaui.com 0 0 2 4269 0 0 0 0 

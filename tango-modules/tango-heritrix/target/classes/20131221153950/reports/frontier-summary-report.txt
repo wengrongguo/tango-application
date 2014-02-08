@@ -1,0 +1,85 @@
+Frontier report - 201312211540
+ Job being crawled: bj.tianya
+
+ -----===== STATS =====-----
+ Discovered:    3
+ Queued:        0
+ Finished:      3
+  Successfully: 3
+  Failed:       0
+  Disregarded:  0
+
+ -----===== QUEUES =====-----
+ Already included size:     3
+               pending:     0
+
+ All class queues map size: 1
+             Active queues: 1
+                    In-process: 0
+                         Ready: 0
+                       Snoozed: 1
+           Inactive queues: 0 (p3: 0)
+            Retired queues: 0
+          Exhausted queues: 0
+
+             Last state: EMPTY
+ -----===== MANAGER THREAD =====-----
+Java Thread State: RUNNABLE
+Blocked/Waiting On: NONE
+    java.lang.Thread.getStackTrace(Thread.java:1479)
+    org.archive.crawler.framework.ToeThread.reportThread(ToeThread.java:483)
+    org.archive.crawler.frontier.WorkQueueFrontier.standardReportTo(WorkQueueFrontier.java:1398)
+    org.archive.crawler.frontier.WorkQueueFrontier.reportTo(WorkQueueFrontier.java:1228)
+    org.archive.crawler.reporting.FrontierSummaryReport.write(FrontierSummaryReport.java:41)
+    org.archive.crawler.reporting.StatisticsTracker.writeReportFile(StatisticsTracker.java:909)
+    org.archive.crawler.reporting.StatisticsTracker.dumpReports(StatisticsTracker.java:937)
+    org.archive.crawler.reporting.StatisticsTracker.crawlEnded(StatisticsTracker.java:565)
+    org.archive.crawler.reporting.StatisticsTracker.onApplicationEvent(StatisticsTracker.java:985)
+    org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:97)
+    org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:324)
+    org.archive.crawler.framework.CrawlController.sendCrawlStateChangeEvent(CrawlController.java:326)
+    org.archive.crawler.framework.CrawlController.completeStop(CrawlController.java:391)
+    org.archive.crawler.framework.CrawlController.noteFrontierState(CrawlController.java:656)
+    org.archive.crawler.frontier.AbstractFrontier.reachedState(AbstractFrontier.java:439)
+    org.archive.crawler.frontier.AbstractFrontier.managementTasks(AbstractFrontier.java:397)
+    org.archive.crawler.frontier.AbstractFrontier$1.run(AbstractFrontier.java:315)
+
+ -----===== 1 LONGEST QUEUES =====-----
+LONGEST#0:
+Queue cn,tianya,bbs, (p3)
+  0 items
+   wakes in: 3s889ms
+    last enqueued: http://bbs.tianya.cn/list.jsp?item=5180%26sub=1
+      last peeked: http://bbs.tianya.cn/list.jsp?item=5180%26sub=1
+   total expended: 3 (total budget: -1)
+   active balance: 2997
+   last(avg) cost: 1(1)
+   totalScheduled fetchSuccesses fetchFailures fetchDisregards fetchResponses robotsDenials successBytes totalBytes fetchNonResponses lastSuccessTime
+   3 3 0 0 3 0 12901 12901 2 2013-12-21T15:40:06.649Z
+   SimplePrecedenceProvider
+   3
+
+
+ -----===== IN-PROCESS QUEUES =====-----
+
+ -----===== READY QUEUES =====-----
+
+ -----===== SNOOZED QUEUES =====-----
+SNOOZED#0:
+Queue cn,tianya,bbs, (p3)
+  0 items
+   wakes in: 3s887ms
+    last enqueued: http://bbs.tianya.cn/list.jsp?item=5180%26sub=1
+      last peeked: http://bbs.tianya.cn/list.jsp?item=5180%26sub=1
+   total expended: 3 (total budget: -1)
+   active balance: 2997
+   last(avg) cost: 1(1)
+   totalScheduled fetchSuccesses fetchFailures fetchDisregards fetchResponses robotsDenials successBytes totalBytes fetchNonResponses lastSuccessTime
+   3 3 0 0 3 0 12901 12901 2 2013-12-21T15:40:06.649Z
+   SimplePrecedenceProvider
+   3
+
+
+ -----===== INACTIVE QUEUES =====-----
+
+ -----===== RETIRED QUEUES =====-----
