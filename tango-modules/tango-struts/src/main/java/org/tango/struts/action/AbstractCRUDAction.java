@@ -59,7 +59,6 @@ public abstract class AbstractCRUDAction<T extends AbstractModel> extends Abstra
 
     @Action(value = SAVE_OR_UPDATE, results = {@Result(name = SUCCESS, type = JSON, params = {ROOT, ACTION_RESULT, CONTENT_TYPE, CONTENT_TYPE_HTML})})
     public String saveOrUpdate() throws Exception {
-        try {
             prepare();
             boolean temp = false;
             if (abstractModel.getId() != null) {
@@ -68,9 +67,6 @@ public abstract class AbstractCRUDAction<T extends AbstractModel> extends Abstra
                 temp = abstractService.save(abstractModel);
             }
             actionResult = ActionResult.getActionResult(temp);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         return SUCCESS;
     }
 
