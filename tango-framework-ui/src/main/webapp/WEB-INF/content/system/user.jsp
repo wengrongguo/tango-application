@@ -10,7 +10,7 @@
             <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-remove',plain:true"
                onclick="userView.handler.del();">删除</a>
             <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-save',plain:true"
-               onclick="userView.handler.rePass();">修改密码</a>
+               onclick="userView.handler.rePass();">设置密码</a>
             <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-save',plain:true"
                onclick="userView.handler.openUserRoleDialog();">用户角色</a>
         </div>
@@ -47,7 +47,7 @@
     </form>
 </div>
 
-<div id="userEditDialog" title="编辑用户" class="easyui-dialog" style="width:600px;height:400px;padding:5px;"
+<div id="userEditDialog" title="编辑用户" class="easyui-dialog" style="width:450px;height:300px;padding:5px;"
      data-options="closed:true,modal:'true',buttons: '#dlg-buttons'">
     <form id="userEditForm" method="post">
         <s:hidden id="userUUID" name="id" cssClass="easyui-validatebox"></s:hidden>
@@ -64,20 +64,6 @@
                 <td>
                     <input name="account" type="text" class="easyui-validatebox" validType="account"
                            data-options="required:true,prompt:'请输入帐号.'"/>
-                </td>
-            </tr>
-            <tr id="passwordTr">
-                <td><label class="lbInfo">新密码：</label></td>
-                <td>
-                    <input id="pwd" type="password" name="password" class="easyui-validatebox" validType="safepass"
-                           data-options="required:true" data-options="prompt:'新密码不能为空.'"/>
-                </td>
-            </tr>
-            <tr id="passwordTrRe">
-                <td><label class="lbInfo">确认新密码：</label></td>
-                <td>
-                    <input id="rpwd" type="password" class="easyui-validatebox" required="required"
-                           validType="equalTo['#pwd']" data-options="prompt:'新密码不能为空.'"/>
                 </td>
             </tr>
             <tr>

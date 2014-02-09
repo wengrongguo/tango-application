@@ -44,6 +44,7 @@ public class UserServiceImpl extends FrameworkServiceSupport<User> implements Us
 
     @Override
     public boolean save(User user) {
+        user.setPassword("123456");
         user.setPassword(SecurityUtils.Encryption(user.getPassword(), EncryptedType.MD5));
         return super.save(user);
     }
