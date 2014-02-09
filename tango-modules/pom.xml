@@ -22,6 +22,7 @@
         <module>tango-utils-servlet</module>
         <module>tango-heritrix</module>
         <module>tango-poi</module>
+        <module>tango-mail</module>
     </modules>
 
 
